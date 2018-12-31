@@ -1,0 +1,11 @@
+-
+  name: Install git onto Centos VM
+  hosts: 127.0.0.1
+  connection: local
+  tasks: 
+    - name: Install git using yum
+      yum: 
+        name: git
+        state: present
+
+
